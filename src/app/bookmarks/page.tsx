@@ -3,7 +3,6 @@ import { BookmarksResponse } from "@/types";
 import Bookmarks from "@/app/components/Bookmarks";
 import SearchForm from "@/app/components/SearchForm";
 
-//type Params = Promise<{ rcdId: string }>
 type Props = {
   searchParams: Promise<{ page: string, query?: string }>
 }
