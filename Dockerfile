@@ -8,7 +8,6 @@ WORKDIR /app
 COPY . .
 RUN npm run build
 
-
 FROM base as production
 WORKDIR /app
 
@@ -18,7 +17,6 @@ RUN npm ci
 RUN addgroup -g 1001 -S nodejs
 RUN adduser -S nextjs -u 1001
 USER nextjs
-
 
 COPY --from=builder /app/next.config.mjs ./
 COPY --from=builder /app/public ./public
