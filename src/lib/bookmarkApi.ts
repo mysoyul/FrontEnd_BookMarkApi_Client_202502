@@ -1,6 +1,8 @@
 import { BookmarksResponse } from "@/types"
 import axios, { AxiosResponse } from "axios"
 
+export const dynamic = "force-dynamic";
+
 //const API_BASE_URL = 'http://localhost:8080'
 const API_BASE_URL = process.env.NEXT_PUBLIC_SERVER_API_BASE_URL
 
